@@ -1,0 +1,116 @@
+baseURL: "https://thewimo.github.io/"
+title: "thewimo"
+theme: PaperMod
+
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "thewimo"
+  description: "Building in public. Writing about AI, engineering, and the journey."
+  keywords: [Blog, AI, Machine Learning, Engineering, Tech]
+  author: "Thewind Mom"
+
+  defaultTheme: auto  # dark, light, or auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    disableHLJS: true  # Disable default highlight.js
+
+  # Home page profile
+  profileMode:
+    enabled: true
+    title: "Thewind Mom"
+    subtitle: "Building in public. Writing about AI, engineering, and the journey."
+    imageUrl: ""
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Posts
+        url: posts
+      - name: About
+        url: about
+
+  # Social icons
+  socialIcons:
+    - name: github
+      url: "https://github.com/thewimo"
+    - name: twitter
+      url: "https://twitter.com/thewindmom"
+    - name: linkedin
+      url: "https://linkedin.com/in/thewindmom"
+    - name: rss
+      url: "index.xml"
+
+  # For search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# Math rendering (KaTeX)
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON  # For search
