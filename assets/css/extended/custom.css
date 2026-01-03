@@ -1,0 +1,104 @@
+/* Typography - Inter font for clean, modern look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Teal accent color system */
+:root {
+    --accent: #14b8a6;
+    --accent-hover: #0d9488;
+}
+
+/* Links */
+.post-content a,
+.post-entry a {
+    color: var(--accent);
+}
+.post-content a:hover,
+.post-entry a:hover {
+    color: var(--accent-hover);
+}
+
+/* Profile buttons - teal accent */
+.button {
+    background: var(--accent) !important;
+    color: #fff !important;
+    transition: background 0.2s ease;
+}
+.button:hover {
+    background: var(--accent-hover) !important;
+}
+
+/* Social icons hover */
+.social-icons a:hover svg {
+    fill: var(--accent);
+}
+
+/* Softer dark mode */
+:root[data-theme="dark"] {
+    --theme: rgb(18, 20, 24);
+    --entry: rgb(28, 30, 36);
+}
+
+/* Smooth transitions everywhere */
+a, .button, svg, .post-entry, .nav-item {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Button hover lift effect */
+.button:hover {
+    background: var(--accent-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+}
+
+/* Post entry hover */
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Social icons smooth scale */
+.social-icons a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Nav links underline animation */
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.25s ease;
+}
+.nav a:hover::after {
+    width: 100%;
+}
+.nav a {
+    position: relative;
+}
+
+/* Theme toggle smooth */
+#theme-toggle {
+    transition: transform 0.3s ease;
+}
+#theme-toggle:hover {
+    transform: rotate(30deg);
+}
+
+/* Page load fade-in */
+.main {
+    animation: fadeIn 0.4s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -18,3 +18,9 @@ Thumbs.db
 *~
 .idea/
 .vscode/
+
+# Continuous Claude cache (local only)
+.claude/cache/
+
+# Claude working notes (personal, not for team)
+thoughts/
