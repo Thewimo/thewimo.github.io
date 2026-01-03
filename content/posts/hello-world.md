@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-date: 2026-01-03
+date: 2026-01-03T09:00:00Z
 draft: false
 tags: ["meta"]
 description: "Why I'm starting this blog and what to expect."
@@ -28,3 +28,7 @@ I was inspired by some of my favorite tech bloggers:
 - Occasional personal reflections
 
 Let's see where this goes.
+
+---
+
+*P.S. Blog design shamelessly stolen from [Lilian Weng](https://lilianweng.github.io/). Thanks for making it look so good I had to copy it.*
