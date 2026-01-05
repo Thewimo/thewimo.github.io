@@ -21,7 +21,7 @@ The new direction is minimal, fast, and focused.
 
 It feels significantly more polished now. Less noise, more signal.
 
-![Imperator Frontend](/images/260105_imperator.png)
+![Imperator Frontend](/images/260105_imperator_2.jpeg)
 
 ## The Subscription Maze
 
