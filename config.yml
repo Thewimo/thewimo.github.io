@@ -45,7 +45,7 @@ params:
 
   # Home page profile
   profileMode:
-    enabled: true
+    enabled: false
     title: "Thewind Mom"
     subtitle: "Building in public. Writing about AI, engineering, and the journey."
     imageUrl: ""
