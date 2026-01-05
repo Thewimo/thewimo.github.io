@@ -22,6 +22,8 @@ I've tried a few things:
 
 **Conductor** was one of the first UIs I found. It creates separate worktrees so agents don't step on each other's changes. I still use it when I want manual control over my agents. It works.
 
+![Conductor Interface](/images/260105_conductor.png)
+
 **Vibe Kanban** looked promising, but it didn't feel autonomous enough for what I wanted. I couldn't figure out how to make it truly hands-off.
 
 I briefly looked at **Amp Code** and **Droid by Factory.ai**, but since I already have a Claude Code subscription, I didn't go deep there.
@@ -75,6 +77,9 @@ I set it up this morning. A few things surprised me:
 
 **tmux is... tmux.** The default interface is tmux-based. If you're comfortable in tmux, great. But I want to SEE my agents. I want a dashboard. I want to glance at a screen and know what's happening.
 
+![Gas Town Tmux Interface 1](/images/260105_gastown_1.png)
+![Gas Town Tmux Interface 2](/images/260105_gastown_2.png)
+
 ## Why I'm Building a UI
 
 That's the gap I want to fill.
@@ -86,6 +91,8 @@ Gas Town's architecture is solid. The CLI and tmux interface work. But I think t
 - Know at a glance what's stuck and what's landed
 
 I'm calling it **Imperator** (working title). I've already mocked it up with two [Lovable](https://lovable.dev) prompts - starting simple with side-by-side terminal views. If it takes off, maybe task graphs and convoy dashboards later.
+
+![Imperator Frontend Mockup](/images/260105_imperator.png)
 
 I'm learning as I go. This is building in public in the truest sense.
 
