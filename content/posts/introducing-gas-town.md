@@ -111,5 +111,3 @@ And if you're building something similar or want to follow along with Imperator 
 Back to building.
 
 ---
-
-*Next up: Setting up Gas Town from scratch and my first real multi-agent workflow.*
