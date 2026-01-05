@@ -29,7 +29,7 @@ I hit my Opus weekly limit again. So I'm back to Codex for now, but frankly, it'
 
 Managing these model subscriptions is becoming a full-time job. To keep track of all the usage ceilings without losing my mind, I started using **CodexBar**.
 
-![CodexBar Usage Tracking](/images/250105_CodexBar.png)
+![CodexBar Usage Tracking](/images/260105_CodexBar.png)
 
 I also finally caved and started the **Google AI** plan today after seeing that Opus 4.5 can be routed through Antigravity.
 Here's how I'm splitting my subscriptions right now to maximize throughput:
@@ -44,9 +44,9 @@ Here's how I'm splitting my subscriptions right now to maximize throughput:
 
 I really wanted to get **Droid** (by Factory.ai) working with **Vibeproxy**. The dream was to use my existing Codex and Claude Code subscriptions inside Droid without paying double.
 
-It wasn't easy. At first, I could only access Gemini Pro models, and getting Codex to work required understanding the configuration codebase, reading through some issues, and [submitting a pull request](https://github.com/automazeio/vibeproxy/pull/145). But it was easy enough to get it working with Gemini 3 Pro.
+It wasn't easy. At first, I could only access Gemini Pro models, and getting Codex and Claude models to work required understanding the configuration codebase, reading through some issues, changing, testing the code, and [submitting a pull request](https://github.com/automazeio/vibeproxy/pull/145) to get it merged. But it was easy enough to get it working with Gemini 3 Pro.
 
-![Vibeproxy Settings](/images/250105_VibeProxy.png)
+![Vibeproxy Settings](/images/260105_VibeProxy.png)
 
 But since I knew Opus could be used via Antigravity, I decided to go down the rabbit hole.
 
@@ -54,7 +54,7 @@ I dug into the Vibeproxy repo, added the Anthropic extended-thinking beta header
 
 It works, but it's not perfect. Droid is still a bit bugged for me. Gemini 3 Pro is unreliable, but the Codex and Claude models seem stable, so I'm sticking to those for now. However the Opus limit on Antigravity is really small, but atleast i can use it like 1-2 hours every 5 hours and there does not seem to be a weekly limit.
 
-![Droid Setup](/images/250105_droid.png)
+![Droid Setup](/images/260105_droid.png)
 
 I also saw that Vibeproxy supports **Amp Code**, which is next on my list. I keep hearing Amp is better for large codebases because it handles model routing behind the scenes. I'm curious to see if that holds up in practice.
 
